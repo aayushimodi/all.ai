@@ -3,6 +3,22 @@ from google.cloud.language import enums
 from google.cloud.language import types
 from adj_to_noun import *
 
+def pronoun_detect(text_content):
+    client = language_v1.LanguageServiceClient()
+    language = "en"
+    type_ = enums.Document.Type.PLAIN_TEXT
+    document = {"content": text_content, "type": type_, "language": language}
+
+    encoding_type = enums.EncodingType.UTF8
+    response_syntax = client.analyze_syntax(document, encoding_type=encoding_type)
+
+    for token in response_syntax.tokens:
+        part_of_speech = token.part_of_speech
+        if enums.PartOfSpeech.Tag(part_of_speech.tag).name == "NOUN":
+            return True
+
+    return False
+
 def syntax_process(text_content):
     client = language_v1.LanguageServiceClient()
     language = "en"
@@ -43,7 +59,10 @@ def syntax_process(text_content):
                                             if index == 0:
                                                 printable += "\"" + entity.name + " experiencing " + convert + "\"" + "\n"
                                             else:
-                                                printable += " or " + entity.name + " experiencing " + convert + "\n"
+                                                printable += " or \"" + entity.name + " experiencing " + convert + "\"\n"
+
+    if pronoun_detect(text_content):
+        printable = "Your message has pronouns! Make sure to be intentional and specific.\n" + printable
 
     return printable
 

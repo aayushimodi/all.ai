@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All.AI</title>
     <!-- <link rel="stylesheet" href="style.css"> -->
-    <script src="main.js"></script> -->
+    <script src="main.js"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css" />
     <script type="text/javascript" src="{{ url_for('static', filename='main.js') }}"></script>
 </head>
@@ -21,13 +21,13 @@
         </p>
     </div>
     <div id="form">
-        <input id="user_input" type="text" placeholder="Start by writing or pasting text into here"/></input>
-        <input id="text_output" type="button" value="Modified Text"/></input>
+        <textarea id="user_input" type="text" placeholder="Start by writing or pasting text into here"></textarea>
+        <textarea id="text_output" type="button" value="Modified Text"></textarea>
         <br>
         <button onclick="getText()" type="submit" id="submit_button">Submit</button>
     </div>
     <div id='suggestions'>
-        <input id='suggestionsBox'type="button"value="Suggestions!"></input>
+        <textarea id='suggestionsBox'type="button"value="Suggestions:"></textarea>
     </div>
 </body>
 

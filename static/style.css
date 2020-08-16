@@ -120,7 +120,7 @@ body {
 }
 
 #suggestionsBox[type=button]{
-    font-size: 30px;
+    font-size: 18px;
     padding-left: 10px;
     color: black;
 }
