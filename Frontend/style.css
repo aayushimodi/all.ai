@@ -1,0 +1,107 @@
+/*-------- General --------*/
+body {
+    background-color: #89cff0;
+    height: 100vw;
+    margin: 0;
+}
+
+@font-face{
+    font-family: 'Alata';
+    src: url(fonts/Alata-Regular.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+/*-------- header --------*/
+#top_bar{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 230px;
+}
+
+#top_bar h1{
+    margin-top: 0;
+    font-family: 'Alata';
+    font-size: 60px;
+}
+
+#top_bar p{
+    margin: 0 5rem 0 5rem;
+    font-family: 'Alata';
+    font-size: 20px;
+}
+
+
+/*-------- Text form --------*/
+#form{
+    background: #89cff0;
+    margin-top: 40px;
+}
+
+#user_input{
+    margin-left: 100px;
+    width: 600px;
+    height: 250px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: rgb(238, 233, 233);
+    box-shadow: 5px 5px 3px rgb(75, 73, 73);
+}
+
+#user_input:focus {
+    outline-width: 0;
+}
+
+#text_output:focus {
+    outline-width: 0;
+}
+
+#user_input::placeholder{
+    text-align: left;
+    font-size: 18px;
+}
+
+#text_output::placeholder{
+    text-align: left;
+    font-size: 18px;
+}
+
+#text_output{
+    margin-left: 80px;
+    width: 600px;
+    height: 250px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: rgb(238, 233, 233);
+    box-shadow: 5px 5px 3px rgb(75, 73, 73);
+}
+
+#user_input[type=text]{
+    text-align: left;
+    font-size: 18px;
+    padding-left: 10px;
+    color: black;
+}
+
+#text_output[type=text]{
+    text-align: left;
+    font-size: 18px;
+    padding-left: 10px;
+    color: black;
+}
+
+#submit_button{
+    margin-left: 105px;
+    border-radius: 7px;
+    margin-top: 15px;
+    height: 40px;
+    width: 80px;
+    text-align: center;
+    font-size: 18px;
+    border-style: none;
+    border-color: rgb(133, 130, 130);
+    box-shadow: 2px 2px 4px rgb(31, 29, 29);
+    background-color: rgb(167, 169, 170);
+}
+
