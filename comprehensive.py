@@ -11,6 +11,8 @@ def syntax_process(text_content):
 
     encoding_type = enums.EncodingType.UTF8
 
+    printable = ""
+
     response_syntax = client.analyze_syntax(document, encoding_type=encoding_type)
 
     for sentence in response_syntax.sentences:
@@ -34,9 +36,16 @@ def syntax_process(text_content):
                                     descriptor = {"content": token.text.content, "type": type_, "language": language}
                                     response_sentiment = client.analyze_sentiment(descriptor, encoding_type=encoding_type)
                                     if response_sentiment.document_sentiment.score < 0:
-                                        revised = entity.name + " experiencing " + convert_adj_to_noun(token.text.content)[0]
                                         original = token.text.content + " " + entity.name
-                                        print(original + " : " + revised)
+                                        converted = convert_adj_to_noun(token.text.content)
+                                        printable += "Consider replacing \"" + original + "\" with "
+                                        for index,convert in enumerate(converted):
+                                            if index == 0:
+                                                printable += "\"" + entity.name + " experiencing " + convert + "\"" + "\n"
+                                            else:
+                                                printable += " or " + entity.name + " experiencing " + convert + "\n"
+
+    print(printable)
 
 def process():
     f = open("test.txt", "r")
