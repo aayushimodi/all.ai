@@ -48,10 +48,10 @@ def replaceTerms (words,d):
                 words[i] = d.get(term)
     return words
 
-sentence = readFile()
-print(sentence)
-words = re.findall(r"[\w']+|[.,!?;&-]", sentence)
-d = createDict()
-lws = replaceTerms(words, d)
-output = listToSentence(lws)
-writeFile(output)
+def fixTerms (txt):
+    sentence = txt
+    words = re.findall(r"[\w']+|[.,!?;&-]", sentence)
+    d = createDict()
+    lws = replaceTerms(words, d)
+    output = listToSentence(lws)
+    return output
