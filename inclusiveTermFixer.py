@@ -1,17 +1,17 @@
 import re
 
-def readFile():
-    text = ""
-    f = open("input.txt", "r")
-    if(f.readable()):
-        text = f.read()
-    f.close()
-    return text
+# def readFile():
+#     text = ""
+#     f = open("input.txt", "r")
+#     if(f.readable()):
+#         text = f.read()
+#     f.close()
+#     return text
 
-def writeFile(output):
-    f = open("output.txt", "w")
-    f.write(output)
-    f.close
+# def writeFile(output):
+#     f = open("output.txt", "w")
+#     f.write(output)
+#     f.close
 
 def createDict():
     d = {}
@@ -55,3 +55,4 @@ def fixTerms (txt):
     lws = replaceTerms(words, d)
     output = listToSentence(lws)
     return output
+
