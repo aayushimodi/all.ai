@@ -10,7 +10,7 @@ def load_page():
 @app.route('/processdata', methods=["POST"])
 def processData():
     data = request.form.get('getText')
-    print(data)
+    # print(data)
     return data
     # modify text
     # return modified_text
