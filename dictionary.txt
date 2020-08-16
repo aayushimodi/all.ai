@@ -1,9 +1,6 @@
 lame=unimpressive
 Lame=Unimpressive
 LAME=UNIMPRESSIVE
-pow-wow=meeting
-Pow-wow=Meeting
-POW-WOW=MEETING
 crazy=wild
 Crazy=Wild
 CRAZY=WILD
