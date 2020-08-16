@@ -10,9 +10,6 @@ CRAZY=WILD
 stupid=silly
 Stupid=Silly
 STUPID=STUPID
-insane=extreme
-Insane=Extreme
-INSANE=EXTREME
 psychotic=peculiar
 Psychotic=Peculiar
 PSYCHOTIC=PECULIAR
@@ -25,6 +22,3 @@ DUMB=IGNORANT
 insane=amazing
 Insane=Amazing
 INSANE=AMAZING
-crazy:awesome
-Crazy:Awesome
-CRAZY:AWESOME

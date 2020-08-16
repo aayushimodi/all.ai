@@ -1,16 +1,37 @@
 import re
 
 
-sentence = "Woah that was insane! Did you see that crazy play!?"
-words = re.findall(r"[\w']+|[.,!?;]", sentence)
-d = {'insane': 'amazing', 'crazy': 'awesome'}
-
 
 
 # def readFile():
 #     f = open("text file path", r)
 #     f.readline
 #     f.close
+
+def readFile():
+    text = ""
+    f = open("input.txt", "r")
+    if(f.readable()):
+        text = f.read()
+    f.close()
+    return text
+
+def writeFile(output):
+    f = open("output.txt", "w")
+    f.write(output)
+    f.close
+
+def createDict():
+    d = {}
+    f = open('dictionary.txt', 'r')
+    for line in f:
+        x = [elt.strip() for elt in line.split("=")]
+        badWord = x[0]
+        goodWord = x[1]
+        d[badWord] = goodWord
+    f.close()
+    return d
+
 
 def equalsPunc(c):
     if c == "." or c == "!" or c == "?" or c == "," or c == ":" or c == ";":
@@ -35,5 +56,11 @@ def replaceTerms (words,d):
                 words[i] = d.get(term)
     return words
 
+sentence = readFile()
+print(sentence)
+words = re.findall(r"[\w']+|[.,!?;]", sentence)
+d = createDict()
 lws = replaceTerms(words, d)
-print(listToSentence(lws))
+output = listToSentence(lws)
+print(output)
+writeFile(output)
