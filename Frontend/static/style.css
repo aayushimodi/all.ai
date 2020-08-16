@@ -47,6 +47,7 @@ body {
     border-style: solid;
     border-color: rgb(238, 233, 233);
     box-shadow: 5px 5px 3px rgb(75, 73, 73);
+    background-color: white;
 }
 
 #user_input:focus {
@@ -75,6 +76,7 @@ body {
     border-style: solid;
     border-color: rgb(238, 233, 233);
     box-shadow: 5px 5px 3px rgb(75, 73, 73);
+    background-color: white;
 }
 
 #user_input[type=text]{
@@ -84,7 +86,7 @@ body {
     color: black;
 }
 
-#text_output[type=text]{
+#text_output[type=button]{
     text-align: left;
     font-size: 18px;
     padding-left: 10px;
@@ -105,3 +107,20 @@ body {
     background-color: rgb(167, 169, 170);
 }
 
+#suggestionsBox {
+    margin-top: 20px;
+    margin-left: 100px;
+    width: 1300px;
+    height: 250px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: rgb(238, 233, 233);
+    box-shadow: 5px 5px 3px rgb(75, 73, 73);
+    background-color: rgb(233, 230, 230);
+}
+
+#suggestionsBox[type=button]{
+    font-size: 30px;
+    padding-left: 10px;
+    color: black;
+}
