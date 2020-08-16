@@ -10,11 +10,12 @@ def load_page():
 @app.route('/processdata', methods=["POST"])
 def processData():
     data = request.form.get('getText')
-    # print(data)
+    # function that takes in data and returns suggestions
     return data
-    # modify text
-    # return modified_text
 
+@app.route('/suggestionsdata', methods=["POST"])
+def suggestionsData():
+    return "hello world testing 123" #function that returns suggestions
 
 if __name__ == '__main__':
     app.run(host="localhost", port=8080, debug=True)
