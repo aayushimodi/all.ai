@@ -79,3 +79,7 @@ GURU=AUTHORITY
 nazi=stickler
 Nazi=Stickler
 NAZI=STICKLER
+hysterical=funny
+Hysterical=Funny
+HYSTERICAL=FUNNY
+OCD=meticulous
