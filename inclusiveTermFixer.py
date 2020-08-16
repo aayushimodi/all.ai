@@ -55,3 +55,7 @@ def fixTerms (txt):
     lws = replaceTerms(words, d)
     output = listToSentence(lws)
     return output
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1abfbb4a14619eac9a6c4d2405bed43d88f3bda0
