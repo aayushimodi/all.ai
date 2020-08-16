@@ -1,13 +1,5 @@
 import re
 
-
-
-
-# def readFile():
-#     f = open("text file path", r)
-#     f.readline
-#     f.close
-
 def readFile():
     text = ""
     f = open("input.txt", "r")
@@ -58,9 +50,8 @@ def replaceTerms (words,d):
 
 sentence = readFile()
 print(sentence)
-words = re.findall(r"[\w']+|[.,!?;]", sentence)
+words = re.findall(r"[\w']+|[.,!?;&-]", sentence)
 d = createDict()
 lws = replaceTerms(words, d)
 output = listToSentence(lws)
-print(output)
 writeFile(output)
