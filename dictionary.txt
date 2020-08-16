@@ -1,0 +1,7 @@
+lame=unimpressive
+pow-wow=meeting
+crazy=wild
+stupid=silly
+insane=extreme
+psychotic=peculiar
+nuts=frustrating
