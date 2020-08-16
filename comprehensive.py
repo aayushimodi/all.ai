@@ -45,13 +45,13 @@ def syntax_process(text_content):
                                             else:
                                                 printable += " or " + entity.name + " experiencing " + convert + "\n"
 
-    print(printable)
+    return printable
 
-def process():
-    f = open("test.txt", "r")
-    if(f.readable()):
-        syntax_process(f.read())
-
-    f.close()
-
-process()
+# def process():
+#     f = open("test.txt", "r")
+#     if(f.readable()):
+#         syntax_process(f.read())
+#
+#     f.close()
+#
+# process()

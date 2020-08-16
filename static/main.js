@@ -9,6 +9,7 @@ function getText() {
 
 
     const formData2 = new FormData();
+    formData2.append("getSuggestions", user_text);
     fetch('/suggestionsdata', { method: 'POST', body: formData2 })
         .then(res => res.text())
         .then(text => outputSuggestions(text))
@@ -27,5 +28,3 @@ function outputSuggestions(text) {
     var suggestions_field = document.getElementById("suggestionsBox")
     suggestions_field.value = str;
 }
-
-

@@ -1,4 +1,7 @@
 from flask import Flask, render_template, request
+from comprehensive import *
+from inclusiveTermFixer import *
+
 app = Flask(__name__)
 
 
@@ -11,11 +14,13 @@ def load_page():
 def processData():
     data = request.form.get('getText')
     # function that takes in data and returns suggestions
-    return data
+    return fixTerms(data)
 
 @app.route('/suggestionsdata', methods=["POST"])
 def suggestionsData():
-    return "hello world testing 123" #function that returns suggestions
+    data = request.form.get('getSuggestions')
+    return syntax_process(data) #function that returns suggestions
+
 
 if __name__ == '__main__':
     app.run(host="localhost", port=8080, debug=True)
