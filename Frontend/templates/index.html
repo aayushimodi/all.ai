@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All.AI</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+    <!-- <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css" />
+    <script type="text/javascript" src="{{ url_for('static', filename='main.js') }}"></script>
 </head>
 
 <body>
@@ -18,13 +20,12 @@
             incidunt vero qui dignissimos!
         </p>
     </div>
-    <form method="POST" action="test.py">
+    <div id="form">
         <input id="user_input" type="text" placeholder="Start by writing or pasting text into here" />
         <input id="text_output" type="text" placeholder="Modified Text" />
         <br>
-        <button onclick="getText()" id="submit_button">Submit</button>
-    </form>
-
+        <button onclick="getText()" type="submit" id="submit_button">Submit</button>
+    </div>
 </body>
 
 </html>
