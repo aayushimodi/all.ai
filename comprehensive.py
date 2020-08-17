@@ -14,7 +14,7 @@ def pronoun_detect(text_content):
 
     for token in response_syntax.tokens:
         part_of_speech = token.part_of_speech
-        if enums.PartOfSpeech.Tag(part_of_speech.tag).name == "NOUN":
+        if enums.PartOfSpeech.Tag(part_of_speech.tag).name == "PRON":
             return True
 
     return False
