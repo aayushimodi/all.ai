@@ -1,4 +1,4 @@
-# allai
+# allai.space
 
 ###### A space for allies, a space for all
 #### Hack '20 Identity Track Winner
