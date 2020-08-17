@@ -1,7 +1,9 @@
 # allai
 
 ###### A space for allies, a space for all
-#### By: Aayushi, Amartya, Darsh, Riya
+#### Hack '20 Identity Track Winner
+
+#### By: [Aayushi](https://www.linkedin.com/in/aayushimodi/), [Amartya](https://www.linkedin.com/in/amartyaranganathan/), [Riya](https://www.linkedin.com/in/riyabaheti/), [Darsh](https://www.linkedin.com/in/desaidarsh/)
 
 ## Inspiration
 In an age of technology and a pandemic, virtual communication is extremely important. We rely on technology to convey our words to others, and oftentimes, it is very easy to misuse them, completely unintentionally. However, using inclusive language, as our keynote speaker noted, is a very powerful way to make a change towards better diversity and inclusion in any space, especially in professional settings. Allai is a tool to enable this, providing suggestions for inclusive language in your own writing.
