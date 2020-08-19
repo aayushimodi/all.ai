@@ -1,7 +1,7 @@
 # allai.space
 
 ###### A space for allies, a space for all
-#### Hack '20 Identity Track Winner
+#### DubHacks Hack '20 Identity Track Winner
 
 #### By: [Aayushi](https://www.linkedin.com/in/aayushimodi/), [Amartya](https://www.linkedin.com/in/amartyaranganathan/), [Riya](https://www.linkedin.com/in/riyabaheti/), [Darsh](https://www.linkedin.com/in/desaidarsh/)
 
